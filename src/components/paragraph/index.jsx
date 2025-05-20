@@ -1,5 +1,5 @@
 import CLink from "../link";
-import { Paragraph } from "./style";
+import { Paragraph, SemiboldParagraph } from "./style";
 
 const CParagraphLink = (props) => {
     return(
@@ -8,3 +8,17 @@ const CParagraphLink = (props) => {
 }
 
 export default CParagraphLink;
+
+export const CRegularParagraph = (props) => {
+    return(
+       <Paragraph>{props.txt}</Paragraph>
+    )
+}
+
+export const CSemiboldParagraph = (props) => {
+    return(
+        <SemiboldParagraph>
+            {props.txt}
+        </SemiboldParagraph>
+    )
+}

@@ -1,4 +1,4 @@
-import { ButtonLoginRegister } from "./style";
+import { ButtonLoginRegister, GenericButton } from "./style";
 
 const CButtonLoginRegister = (props) => {
     return (
@@ -14,3 +14,11 @@ const CButtonLoginRegister = (props) => {
 }
 
 export default CButtonLoginRegister;
+
+export const CGenericButton = (props) => {
+    return(
+        <GenericButton>{props.txt}</GenericButton>
+    )
+}
+
+
